@@ -23,8 +23,7 @@ export async function GET(_context: APIContext) {
 
 function getCustomData() {
   const follow = themeConfig.rss.follow
-  if (!follow)
-    return ''
+  if (!follow) return ''
   const { feedId, userId } = follow
   return `<follow_challenge><feedId>${feedId}</feedId><userId>${userId}</userId></follow_challenge>`
 }
@@ -49,7 +48,6 @@ function getPostItem(post: Post) {
 
 function getPostContent(post: Post) {
   const isFullText = themeConfig.rss.fullText
-  if (!isFullText)
-    return post.data.description
+  if (!isFullText) return post.data.description
   return sanitizeHtml(parser.render(post.body || ''), { allowedTags })
 }

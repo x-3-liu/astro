@@ -17,8 +17,7 @@ function deepMerge<T>(target: T, source: DeepPartial<T>): T {
           targetValue,
           sourceValue as DeepPartial<T[keyof T]>,
         )
-      }
-      else {
+      } else {
         output[typedKey] = sourceValue as T[keyof T]
       }
     }

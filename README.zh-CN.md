@@ -84,8 +84,8 @@ pnpm new-post
 socials: [
   {
     name: 'github',
-    href: 'https://github.com/moeyua/astro-theme-typography'
-  }
+    href: 'https://github.com/moeyua/astro-theme-typography',
+  },
 ]
 ```
 
@@ -101,8 +101,8 @@ socials: [
 navs: [
   {
     name: 'Categories',
-    href: '/categories'
-  }
+    href: '/categories',
+  },
 ]
 ```
 

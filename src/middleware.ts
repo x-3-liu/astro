@@ -12,10 +12,8 @@ export const onRequest = defineMiddleware(async (context, next) => {
   }
 
   context.locals.translate = (key, param) => {
-    if (!validateKey(key))
-      return key
-    if (!param)
-      return localeTranslate[key]
+    if (!validateKey(key)) return key
+    if (!param) return localeTranslate[key]
     return localeTranslate[key].replace('%d', param.toString())
   }
   return next()

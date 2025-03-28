@@ -10,8 +10,7 @@ await bumpp({
   commit: true,
   progress: (progress) => {
     const { newVersion } = progress
-    if (isChangelogenDone)
-      return
+    if (isChangelogenDone) return
     execSync(`changelogen --output -r ${newVersion}`)
     isChangelogenDone = true
   },

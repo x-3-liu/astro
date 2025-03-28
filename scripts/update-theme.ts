@@ -4,8 +4,7 @@ import process from 'node:process'
 try {
   // 检查是否已经添加了模板仓库
   execSync('git remote | grep template', { stdio: 'ignore' })
-}
-catch {
+} catch {
   // 如果没有添加，则添加模板仓库
   execSync(
     'git remote add template https://github.com/moeyua/astro-theme-typography.git',
@@ -21,8 +20,7 @@ try {
   execSync('git merge template/main --allow-unrelated-histories', {
     stdio: 'inherit',
   })
-}
-catch (error) {
+} catch (error) {
   console.error('更新主题时出错:', error)
   process.exit(1)
 }

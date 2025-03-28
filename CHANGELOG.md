@@ -6,7 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
 ### Added
+
 - 添加视图过渡动画。
 - 支持配置颜色。
 - 支持 RSS 全文输出与 follow 配置。
@@ -17,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 添加自定义主题模块。
 
 ### Changed
+
 - 扩大标题点击区域。
 - 重新设计配置文件。
 - 重新设计布局。
@@ -25,6 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 设置文章分页为首页。
 
 ### Fixed
+
 - 修正在移动端时标题的动画错误。
 - 修正侧边栏抖动的问题。
 - 在主页滚动条错误展示的问题。
@@ -33,10 +37,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 防止 Safari 中 main 元素自动获得焦点
 
 ### Chore
+
 - 使用 ESLint 格式化代码。
 - presetTypography 替换 heti。
 - 重写主题更新脚本。
 
 ## [0.1.0] - 2024-04-10
+
 ### Added
+
 - Publish the first version of the theme.

@@ -36,7 +36,7 @@ export async function getPosts(isArchivePage = false) {
   })
 
   if (import.meta.env.PROD) {
-    return posts.filter(post => post.data.draft !== true)
+    return posts.filter((post) => post.data.draft !== true)
   }
 
   return posts
@@ -59,8 +59,8 @@ export function formatDate(date: Date, format: string = 'YYYY-MM-DD') {
 
 export function getPathFromCategory(
   category: string,
-  category_map: { name: string, path: string }[],
+  category_map: { name: string; path: string }[],
 ) {
-  const mappingPath = category_map.find(l => l.name === category)
+  const mappingPath = category_map.find((l) => l.name === category)
   return mappingPath ? mappingPath.path : category
 }

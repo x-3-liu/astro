@@ -57,8 +57,8 @@ You can add content by creating a new markdown file in `src/content/posts`. The 
 ---
 title: title
 pubDate: 2021-08-01
-categories: ["article"]
-description: "description"
+categories: ['article']
+description: 'description'
 ---
 ```
 
@@ -84,8 +84,8 @@ Typography has built-in support for adding links to your social media accounts t
 socials: [
   {
     name: 'github',
-    href: 'https://github.com/moeyua/astro-theme-typography'
-  }
+    href: 'https://github.com/moeyua/astro-theme-typography',
+  },
 ]
 ```
 
@@ -103,8 +103,8 @@ By default, the navigation are `Posts`, `Archive`, `Categories` and `About`. You
   navs: [
     {
       name: 'Categories',
-      href: '/categories'
-    }
+      href: '/categories',
+    },
   ]
 }
 ```

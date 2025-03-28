@@ -11,7 +11,7 @@ import type {
 import type { LANGUAGES } from '../i18n.ts'
 
 export type DeepPartial<T> = {
-  [P in keyof T]?: T[P] extends object ? DeepPartial<T[P]> : T[P];
+  [P in keyof T]?: T[P] extends object ? DeepPartial<T[P]> : T[P]
 }
 
 export interface ThemeConfig {
@@ -33,9 +33,9 @@ export interface ConfigSite {
   description: string
   website: string
   pageSize: number
-  socialLinks: { name: string, href: string }[]
-  navLinks: { name: string, href: string }[]
-  categoryMap: { name: string, path: string }[]
+  socialLinks: { name: string; href: string }[]
+  navLinks: { name: string; href: string }[]
+  categoryMap: { name: string; path: string }[]
   footer: string[]
 }
 
@@ -62,7 +62,7 @@ export interface ConfigComment {
 export interface ConfigRSS {
   fullText?: boolean
   /** https://github.com/RSSNext/follow */
-  follow?: { feedId: string, userId: string }
+  follow?: { feedId: string; userId: string }
 }
 
 export interface ConfigAnalytics {
