@@ -12,7 +12,9 @@
     "lint:fix": "eslint . --fix",
     "theme:release": "esno scripts/release-theme.ts",
     "theme:create": "esno scripts/create-post.ts",
-    "theme:update": "esno scripts/update-theme.ts"
+    "theme:update": "esno scripts/update-theme.ts",
+    "sync": "node ./scripts/git-sync.js",
+    "deploy": "pnpm run build && pnpm run sync --"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
